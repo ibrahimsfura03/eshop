@@ -1,0 +1,323 @@
+/* Admin Dashboard Layout */
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #1e80b4;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Header */
+.dashboard-header {
+  background: linear-gradient(to right, #1e80b4, #218838);
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.dashboard-header h1 a {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.dashboard-header .btn {
+  padding: 0.6rem 1rem;
+  background: white;
+  color: #1e80b4;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.dashboard-header .btn:hover {
+  background: #218838;
+  color: white;
+}
+
+/* Sidebar */
+.dashboard-sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: #1e80b4;
+  color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-sidenav .profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-sidenav .profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-sidenav nav {
+  width: 100%;
+}
+
+.dashboard-sidenav nav a {
+  display: block;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  color: #1e80b4;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.dashboard-sidenav nav a:hover {
+  background: #218838;
+  color: white;
+}
+
+/* Main Content */
+.dashboard-main {
+  margin-left: 270px;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-main h2 {
+  font-size: 2rem;
+  color: #1e80b4;
+}
+
+.dashboard-main p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.2rem;
+  background: #1e80b4;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #218838;
+}
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+  background: #1e80b4;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+table img {
+  border-radius: 8px;
+}
+
+/* ============================== LOGIN ==================================== */
+
+.login-form {
+  /* margin-top: 30%; */
+  max-width: 400px;
+  margin: 2rem auto; /* Center the form */
+  padding: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e80b4, #3daedc);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-form label {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  box-shadow: 0 0 5px rgba(30, 128, 180, 0.8);
+}
+
+.login-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #218838;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #1e6f2a;
+}
+
+.login-form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.login-form a:hover {
+  color: #cce7f2;
+}
+
+/* ============================== LOGIN ==================================== */
+
+/* ============================= Settings ========================== */
+
+/* Settings Page Styling */
+main.main-content form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.main-content form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+
+main.main-content form input[type="text"],
+main.main-content form input[type="email"],
+main.main-content form input[type="file"],
+main.main-content form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+main.main-content form input[type="file"] {
+  padding: 0.3rem;
+}
+
+main.main-content form button {
+  background: #1e80b4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+main.main-content form button:hover {
+  background: #218838;
+}
+
+/* Profile Image Section */
+.profile-image-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-image-preview {
+  margin-bottom: 1rem;
+}
+
+.profile-image-preview img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+}
+
+/* ============================= Settings ========================== */
+
+
+/* ============================= AddProduct ========================== */
+
+
+
+/* ============================= AddProduct ========================== */
+
+
